@@ -8,7 +8,11 @@ require('dotenv').config()
 
 const hbs = create({
     extname: 'hbs',
-    defaultLayout: 'layout'
+    defaultLayout: 'layout',
+    runtimeOptions: {
+        allowProtoMethodsByDefault: true,
+        allowProtoPropertiesByDefault: true
+    }
 });
 
 app.engine('hbs', hbs.engine);
@@ -31,7 +35,7 @@ try {
     app.listen(port, () => {
         console.log(`Server ${port} porti bilan eshitiliyapti...`);
     })
-    mongoose.connect(process.env.mongoDBLink,()=>{
+    mongoose.connect(process.env.mongoDBLink, () => {
         console.log('MongoDB connected');
     });
 } catch (error) {

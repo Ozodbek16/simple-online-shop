@@ -9,6 +9,8 @@
     list-style: none;
     text-decoration: none !important;
     box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 ::-webkit-scrollbar {
@@ -35,7 +37,7 @@ footer {
     padding: 20px 0;
 }
 
-p{
+p {
     padding: 0;
     margin: 0;
 }
