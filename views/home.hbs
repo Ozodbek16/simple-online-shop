@@ -2,7 +2,7 @@
     <div class="row justify-content-around">
         {{#if products}}
         {{#each products}}
-        <div class="card" style="width: 33.33333%;">
+        <div class="card my_cart" style="width: 33.33333%;">
             <img src="{{img}}" style="min-height: 400px;" class="card-img-top" alt="{{img}}">
             <div class="card-body">
                 <h5 class="card-title">{{name}}</h5>
@@ -10,9 +10,9 @@
                 <a href="/prduct/view/{{id}}" class="btn btn-primary">View more</a>
             </div>
         </div>
-        {{else}}
-        <h2>Cart empty</h2>
         {{/each}}
+            {{else}}
+            <h2>Cart empty</h2>
         {{/if}}
     </div>
 </div>

@@ -6,7 +6,12 @@
         <div class="col-6">
             <h1 style="font-size: 100px; text-align: right;">{{product.name}}</h1>
             <p style="font-size: 40px; text-align: right; margin-top: 70px;">Price: {{product.price}}</p>
-            <a href="/product/buy/{{product.id}}" class="btn btn-success" style="display: block; margin-top: 150px; font-size: 30px;">Buy</a>
+            {{!-- <a href="/product/buy/{{product.id}}" class="btn btn-success"
+                style="display: block; margin-top: 150px; font-size: 30px;">Buy</a> --}}
+            <a href="/product/del/{{product.id}}" class="btn btn-danger"
+                style="display: block; margin-top: 90px; font-size: 30px;" onclick="alert('You really want to turn it off')">Delete</a>
+            <a href="/product/update/{{product.id}}" class="btn btn-primary"
+                style="display: block; margin-top: 90px; font-size: 30px;">Update</a>
         </div>
     </div>
 </div>

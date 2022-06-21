@@ -1,3 +1,3 @@
-document.querySelector('body').addEventListener('contextmenu',(e)=>{
+document.querySelector('body').addEventListener('contextmenu', (e) => {
     e.preventDefault()
 })
